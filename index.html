@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detect Phishing Website | HOME</title>
+    <style>
+         body{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        #background{
+            height: 755px;
+             
+             background: linear-gradient(#f2f3f3,#6cebe4);
+        }
+        #logo{
+            font-family: Papyrus;
+            font-size: 34px;
+            font-weight: 600;
+            margin:auto 20px auto 20px;
+            
+        }
+        .lebel{
+            padding: 10px;
+            margin: auto 5px auto 5px;
+            cursor: pointer;
+            
+            
+        }
+        nav{
+            background-color: rgb(33, 69, 71);
+            color: white;
+        }
+        header{
+            border-bottom: 1px solid #ccc;
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        }
+        
+        #img-wrapper{
+            text-align: center;
+            height: 400px;
+            width: 400px;
+            border-radius: 200px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            background-image: url("https://www.bleepstatic.com/content/hl-images/2021/03/15/phishing-header.jpg");
+            background-position: center;
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        #img-wrapper:hover{
+            opacity: 1;
+        }
+        img{
+            height: 300px;
+            width: 400px;
+
+        }
+        #serch-box-wrapper{
+            margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+        }
+        #serch-box{
+           width: 35%;
+           color: #222;
+           border: 2px solid #dfe1e5;
+           font-size: 13px;
+           padding: 14px;
+           border-radius: 24px;
+           outline: 0;
+           margin: 24px auto 24px auto ;
+          
+       }
+       #serch-box:hover{
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        border-color: rgba(223, 225, 229, 0);
+        }
+
+        #serch-box:focus{
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        border-color: rgba(223, 225, 229, 0);
+        }
+        #text-on-img{
+            text-align: center;
+            color: white;
+            margin-top: 250px;
+            opacity: 1;
+        }
+        #login{
+            display: inline-block;
+            background-color: #276cf7;
+            padding : 10px 24px 10px 24px; 
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin: 10px auto 10px auto;
+            position: absolute;
+            right: 15px;
+            top: -5px;
+            cursor: pointer;
+        }
+        #login:hover{
+            background-color: #6f9cf7;
+            color: black;
+            box-shadow: 0 0px 7px 0 rgba(0,0,0,0.4);
+
+        }
+        #submit{
+            padding: 5px;
+            background-color: #f5343e;
+            border: none;
+            color: white;
+            width:100px;
+            font-size: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0px 5px 0 rgba(0,0,0,0.4);
+        }
+        #submit:hover{
+            background-color: #fa646b;
+            box-shadow: 0 0px 10px 0 rgba(0,0,0,0.6);
+            cursor: pointer;
+        } 
+
+
+    </style> 
+</head>
+<body >
+    <div id="background">
+    <header>
+        <nav>
+            <span id="logo"><span style="font-size: 34px; color: red">D</span> etect <span style="font-size: 34px; color: red">P</span>hishing</span>
+            <span class="lebel">Home</span>
+            <span class="lebel">About</span>
+            <span class="lebel">Blocked URLS </span>
+            <span class="lebel">History</span>
+            <span class="lebel">Feedback</span>
+            <button id="login">Login</button>
+        </nav>
+        
+    </header>
+
+    <main>
+        
+        <div id="img-wrapper">
+            <h1 id="text-on-img"> <span style="font-size: 34px; color: red">D</span>etect <span style="font-size: 34px; color: red">P</span>hishing</h1>
+    
+        </div>
+        <form >
+        <div id="serch-box-wrapper">
+        <input type="text" id="serch-box" placeholder="Enter URL ..." >
+            <br/>
+        <input type="submit" value="Check" id="submit">
+        </div>
+        </form>
+    </main>
+    </div>
+</body>
+</html>
